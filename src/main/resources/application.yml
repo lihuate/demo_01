@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+#datasource
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: mysql://localhost:3306/training_tentact?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=GMT%2B8
+    username: root
+    password: root
+    initialization-mode: always
+mybatis:
