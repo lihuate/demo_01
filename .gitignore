@@ -168,3 +168,5 @@ fabric.properties
 !/src/main/resources/rebel.xml
 !/src/
 !/pom.xml
+!/.idea/
+!/demo.iml
