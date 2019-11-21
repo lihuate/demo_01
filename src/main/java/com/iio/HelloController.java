@@ -1,4 +1,4 @@
-package com.lihuate.iio.demo;
+package com.iio;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

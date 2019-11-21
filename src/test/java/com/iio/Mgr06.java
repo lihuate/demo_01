@@ -1,4 +1,4 @@
-package com.lihuate.iio.demo;
+package com.iio;
 
 public class Mgr06 {
 private static Mgr06 ADMIN;

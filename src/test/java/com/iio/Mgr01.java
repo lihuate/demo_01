@@ -1,4 +1,4 @@
-package com.lihuate.iio.demo;
+package com.iio;
 
 public class Mgr01 {
     private static final Mgr01 INSTANCE = new Mgr01();
