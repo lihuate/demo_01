@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.iii.demo.modules.user.mapper.EmployeeMapper">
+  <select id="findAll" resultType="com.iii.demo.modules.user.vo.Employee">
+  	SELECT
+      employee_id employeeId, concat(first_name,'.',last_name) name,email FROM employees
+  </select>
+
+    <select id="findByUserName" resultType="com.iii.demo.modules.user.vo.Employee">
+        SELECT
+        employee_id employeeId,
+        concat(first_name,'.',last_name) name,
+        email,
+        user_name userName,
+        user_passwd password,
+        status,
+        perms
+         FROM employees
+        where user_name = #{userName}
+    </select>
+
+</mapper>
